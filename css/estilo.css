@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: orange;
+	height: 80px;
+	width: 100%;
+}
+
+
+header .logo{
+	font-size: 24px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #fff;
+	text-transform: capitalize;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+header span{
+	color: #000;
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+header ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+	margin-top: 15px;
+	margin-right: 10px;
+	padding: 20px 0;
+	text-transform: capitalize;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.barra{
+	float:right;
+		
+}
+
+header a:hover {
+	color: #000;
+}

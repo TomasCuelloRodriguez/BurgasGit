@@ -1,0 +1,627 @@
+@font-face {
+    font-family: neon;
+    src: url(fonts/NeonBines.ttf);
+}
+@font-face {
+    font-family: neonDos;
+    src: url(fonts/Neon.ttf);
+    
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --neonpink--color:        
+    0 0 7px rgb(255, 0, 242),
+    0 0 10px rgb(255, 0, 242),
+    0 0 21px #fff,
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 0, 242),
+    0 0 92px rgb(255, 0, 242),
+    0 0 102px rgb(255, 0, 242),
+    0 0 151px rgb(255, 0, 242);
+    --neonskyblue--color:        
+    0 0 7px rgb(0, 255, 255),
+    0 0 21px rgb(0, 0, 0),
+    0 0 42px rgb(255, 255, 255),
+    0 0 151px rgb(0, 255, 255);
+    --neongreen--color:    
+    0 0 7px rgb(37, 211, 102),
+    0 0 21px #fff,
+    0 0 42px rgb(37, 211, 102),
+    0 0 151px rgb(37, 211, 102);
+    --neonpinktwo--color:    
+    0 0 7px rgb(255, 0, 242),
+    0 0 21px rgb(0, 0, 0),
+    0 0 42px rgb(255, 0, 242),
+    0 0 151px rgb(255, 0, 242);
+}
+
+body{
+    background-image: url(imagenesproyecto/pared.jpg);
+    z-index: 10;
+}
+
+header h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 150px;
+    width: auto;
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonpink--color);
+    font-family: neon;
+}
+header h1 a{
+    color:#fff;
+    text-decoration: none;
+}
+@media only screen and (max-width: 479px){
+    header h1{
+        font-size: 90px;
+    }
+}
+@media only screen and (max-width: 768px){
+    header h1{
+        font-size: 90px;
+    }
+}
+header ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+header ul ul{
+    position: absolute;
+    display: none;
+}
+
+header ul ul li{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-shadow: var(--neonpink--color);
+}
+
+header ul li :hover ul{
+    display: block;
+}
+
+.barra{
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.menu{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:10px ;
+    padding-right:10px;
+	list-style: none;
+    text-shadow: var(--neonskyblue--color);
+    font-family: neonDos;
+	}
+
+strong{
+    color:rgb(255, 255, 255) ;
+    font-size: 50px;
+    letter-spacing: 0.3em ;
+}
+
+header .menu :hover{
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonpinktwo--color);
+}
+
+
+section{
+    margin-bottom: 10px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+.burgersind{
+    min-height: 300px;
+    width: 100%;
+    display: grid;
+    padding: 20px;
+    gap: 10px;
+}
+
+.burgersindimg {
+    border: 2px solid #000;
+    border-radius:7px ;
+    box-shadow:0 0 5px #333 ;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonskyblue--color);
+    font-family: neonDos;
+}
+.burgerimg:hover{
+    transform: scale(1.05);
+    transition: all 0.7s;
+}
+.burgerind1{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.burgerind2{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.burgerind3{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.burgerind4{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.burgerind5{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.burgersindimg{
+    height: 380px;
+}
+@media only screen and (min-width:280px)and(max-width:479px){
+    .burgersindimg{
+        grid-template-columns: 1fr ;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width:768px){
+    .burgersindimg{
+        grid-template-columns: 1fr ;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .burgersindimg{
+        grid-template-columns: 1fr 1fr;
+    }
+    .burgerind5{
+        grid-column: 1/3;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .burgersind{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    .burgerind1{
+        grid-column: 1/1;
+    }
+
+    .burgerind2{
+        grid-column: 2/2;
+    }
+        
+    .burgerind3{
+        grid-column: 3/3;
+    }
+
+    .burgerind4{
+        grid-column: 4/4;
+    }
+
+    .burgerind5{
+        grid-column: 5/5;
+    }
+}
+
+.neon{
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonpink--color);
+    font-family: neonDos;
+}
+.neon:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonskyblue--color);
+    font-family: neonDos;
+}
+.beers{
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    gap: 30px;
+}
+
+.beerindimg1 {
+    background-image: url(/STRANGE/amigosdelpino.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+
+.beerindimg2 {
+    background-image: url(/STRANGE/amigosdelpino.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 800px;
+}
+
+@media only screen and (min-width: 280px){
+    #antind{
+    font-size: 50px;
+    text-decoration: none;
+    }
+    #strangeind{
+        font-size: 50px;
+        text-decoration: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    .beers{
+        grid-template-columns: 1fr 1fr;
+    }
+    .beersindimg {
+        min-width: 200px;
+        min-height:600px;
+    }
+    .beerlogoind1{
+        grid-column: 1/1;
+        grid-row: 1/4;
+    }
+    .beerlogoind2{
+        grid-column: 2/2;
+        grid-row: 1/4;
+    }  
+    .beerindimg1{
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    .beerindimg2{
+        grid-column: 2/2;
+        grid-row: 4/4;
+    }
+}
+.locate{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.locate p{
+    font-size: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-shadow: var(--neonskyblue--color);
+    color: #fff;
+}
+.mapview{
+    width:400px ;
+    height:350px;
+}
+#donde{
+    font-size: 60px;
+}
+#time{
+    font-size: 50px;
+}
+
+#menuneon{
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 10%;
+}
+
+.burgermenu{
+    width: 100%;
+    display: grid;
+    min-height: 300px;
+}   
+.burgersmenuimg{
+    display: grid;
+    border: 2px solid #000;
+    border-radius:7px ;
+    box-shadow:0 0 5px #333 ;
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonskyblue--color);
+    font-family: neonDos;
+}
+.burgermenu1{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.burgermenu2{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.burgermenu3{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.burgermenu4{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.burgermenu5{
+    background-image: url(burgers/vegan.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+.nombreh{
+    font-size: 45px;
+    color: #fff;
+    text-shadow: var(--neonskyblue--color);
+    font-family: neondos;
+}
+
+
+@media only screen and (min-width:280px)and(max-width:479px){
+    .burgersmenu1{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 580px){
+    .burgersmenu1{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .nombreh1{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .ingredientes1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .burgermenu1{
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+    .nombreh2{
+        grid-column: 4/5;
+        grid-row: 1/1;
+    }
+    .ingredientes2{
+        grid-column: 4/5;
+        grid-row: 2/2;
+    }
+    .burgermenu2{
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+    .nombreh3{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .ingredientes3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .burgermenu3{
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+    .nombreh4{
+        grid-column: 4/5;
+        grid-row: 1/1;
+    }
+    .ingredientes4{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .burgermenu4{
+        grid-column: 1/3;
+        grid-row: 1/4;
+    }
+    .nombreh5{
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    .ingredientes5{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .burgermenu5{
+        grid-column: 3/5;
+        grid-row: 1/4;
+    }
+}
+.ingredientes{
+    color: #fff;
+    font-size: 40px;
+    text-shadow: var(--neongreen--color);
+    font-family: neondos;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width:768px){
+    .guarnicion{
+        grid-template-columns: 1fr;
+    }
+    .guar{
+        max-height: 300px;
+    }
+    
+}
+
+@media only screen and (min-width: 768px) and (max-width:1023px){
+    .guarnicion{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .guar{
+        max-height: 300px;
+    }
+    
+}
+
+@media only screen and (min-width:1023px) {
+    .guarnicion{
+        grid-template-columns:1fr 1fr 1fr;
+    }
+    .guar{
+        max-height: 300px;
+    }
+    
+}
+
+.guarnicion{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.guar{
+    width: 70%;
+    flex-direction: row;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+
+.boxbirra{
+    display: flex;
+    align-items: center;
+}
+
+.columnbirra{
+    display: flex;
+    align-items: center;
+
+}
+
+.columnbirra img {
+    vertical-align: middle;
+    max-width: 20%;
+    max-height: 20%;
+
+}
+.preciosbirra{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    text-shadow: var(--neonskyblue--color);
+    margin-bottom: 10%;
+}
+
+
+#reserva{
+    text-align: center;
+    font-size: 80px;
+}
+
+form {
+    color: #fff;
+    text-shadow: var(--neonskyblue--color);
+    width: 80%;
+    margin: 0 auto;
+}
+
+label, input {
+    display: inline-block;
+}
+label {
+    width: 30%;
+    text-align: right;
+}
+
+label+input {
+    width: 30%;
+    margin: 0 30% 0 4%;
+}
+
+
+.fotosnos{
+    align-items: center;
+    height: 500px;
+    display: flex;
+}
+
+.fotosnos img {
+    width: 20%;
+    height: 500px;
+    max-height: 50%;
+    object-fit: cover;
+}
+
+.texto{
+    font-family:neonDos;
+    color:#fff;
+    text-align: center;
+    text-shadow: var(--neonskyblue--color);
+    font-size: 20px;
+}
+
+.subir{
+    font-size: 50px;
+    height: 70px;
+    width: 70px;
+    color: #fff;
+    text-shadow: var(--neonpinktwo--color);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.subir:hover{
+    color: rgb(255, 255, 255);
+    text-shadow:var(--neonskyblue--color);
+    font-family: neonDos;
+}
+
+
+
+footer{
+    word-spacing: 1em;
+    height: 150px;
+    background-color:transparent;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 75px;
+}
+footer #fb{
+    color: white;
+    text-shadow: var(--neonskyblue--color);
+}
+
+footer #wsp{
+    color: rgb(37, 211, 102);
+    text-shadow: var(--neongreen--color);
+}
+
+footer #ig{
+    color: white;
+    text-shadow: var(--neonpink--color);
+}
+
+
