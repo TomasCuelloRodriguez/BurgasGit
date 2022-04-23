@@ -7,7 +7,38 @@
     src: url(fonts/Neon.ttf);
     
 }
-
+@keyframes blink {
+    78% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+    79%{
+    color: #333;
+    }
+    80% {
+    text-shadow: none;
+    }
+    81% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+    82% {
+    color: #333;
+    text-shadow: none;
+    }
+    83% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+    92% {
+    color: #333;
+    text-shadow: none;
+    }
+    92.5% {
+    color: inherit;
+    text-shadow: inherit;
+    }
+}
 
 
 *{
@@ -61,6 +92,9 @@ header h1{
 header h1 a{
     color:#fff;
     text-decoration: none;
+}
+header span{ 
+    animation: blink linear infinite 1.5s;
 }
 @media only screen and (max-width: 479px){
     header h1{
@@ -147,7 +181,7 @@ section{
     font-family: neonDos;
 }
 .burgerimg:hover{
-    transform: scale(1.05);
+    transform: scale(2);
     transition: all 0.7s;
 }
 .burgerind1{
@@ -155,28 +189,45 @@ section{
     background-position: center;
     background-size: cover;
 }
+.burgerind1:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
 .burgerind2{
     background-image: url(burgers/vegan.jpg);
     background-position: center;
     background-size: cover;
 }
-
+.burgerind2:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
 .burgerind3{
     background-image: url(burgers/vegan.jpg);
     background-position: center;
     background-size: cover;
 }
-
+.burgerind3:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
 .burgerind4{
     background-image: url(burgers/vegan.jpg);
     background-position: center;
     background-size: cover;
 }
-
+.burgerind4:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
+}
 .burgerind5{
     background-image: url(burgers/vegan.jpg);
     background-position: center;
     background-size: cover;
+}
+.burgerind5:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
 }
 .burgersindimg{
     height: 380px;
@@ -252,6 +303,10 @@ section{
     height: 800px;
 }
 
+.beerindimg1:hover{
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
 
 .beerindimg2 {
     background-image: url(/STRANGE/amigosdelpino.png);
@@ -259,6 +314,11 @@ section{
     background-repeat: no-repeat;
     background-size:contain;
     height: 800px;
+}
+
+.beerindimg2:hover{
+    transform: scale(1.1);
+    transition: all 0.1s;
 }
 
 @media only screen and (min-width: 280px){
