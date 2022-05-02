@@ -1,0 +1,67 @@
+$--neonpink--color:        
+    0 0 7px rgb(255, 0, 242),
+    0 0 10px rgb(255, 0, 242),
+    0 0 21px #fff,
+    0 0 42px rgb(255, 255, 255),
+    0 0 82px rgb(255, 0, 242),
+    0 0 92px rgb(255, 0, 242),
+    0 0 102px rgb(255, 0, 242),
+    0 0 151px rgb(255, 0, 242);
+$--neonskyblue--color:        
+    0 0 7px rgb(0, 255, 255),
+    0 0 21px rgb(0, 0, 0),
+    0 0 42px rgb(255, 255, 255),
+    0 0 151px rgb(0, 255, 255);
+$--neongreen--color:    
+    0 0 7px rgb(37, 211, 102),
+    0 0 21px #fff,
+    0 0 42px rgb(37, 211, 102),
+    0 0 151px rgb(37, 211, 102);
+$--neonpinktwo--color:    
+    0 0 7px rgb(255, 0, 242),
+    0 0 21px rgb(0, 0, 0),
+    0 0 42px rgb(255, 0, 242),
+    0 0 151px rgb(255, 0, 242);
+
+    @font-face {
+        font-family: neon;
+        src: url(fonts/NeonBines.ttf);
+    }
+    @font-face {
+        font-family: neonDos;
+        src: url(fonts/Neon.ttf);
+        
+    }
+    @keyframes blink {
+        78% {
+        color: inherit;
+        text-shadow: inherit;
+        }
+        79%{
+        color: #333;
+        }
+        80% {
+        text-shadow: none;
+        }
+        81% {
+        color: inherit;
+        text-shadow: inherit;
+        }
+        82% {
+        color: #333;
+        text-shadow: none;
+        }
+        83% {
+        color: inherit;
+        text-shadow: inherit;
+        }
+        92% {
+        color: #333;
+        text-shadow: none;
+        }
+        92.5% {
+        color: inherit;
+        text-shadow: inherit;
+        }
+    }
+    

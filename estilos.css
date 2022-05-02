@@ -1,717 +1,716 @@
 @font-face {
-    font-family: neon;
-    src: url(fonts/NeonBines.ttf);
+  font-family: neon;
+  src: url(fonts/NeonBines.ttf);
 }
 @font-face {
-    font-family: neonDos;
-    src: url(fonts/Neon.ttf);
-    
+  font-family: neonDos;
+  src: url(fonts/Neon.ttf);
 }
 @keyframes blink {
-    78% {
+  78% {
     color: inherit;
     text-shadow: inherit;
-    }
-    79%{
+  }
+  79% {
     color: #333;
-    }
-    80% {
+  }
+  80% {
     text-shadow: none;
-    }
-    81% {
+  }
+  81% {
     color: inherit;
     text-shadow: inherit;
-    }
-    82% {
-    color: #333;
-    text-shadow: none;
-    }
-    83% {
-    color: inherit;
-    text-shadow: inherit;
-    }
-    92% {
+  }
+  82% {
     color: #333;
     text-shadow: none;
-    }
-    92.5% {
+  }
+  83% {
     color: inherit;
     text-shadow: inherit;
-    }
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.neon{
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonpink--color);
-    font-family: neonDos;
-}
-.neon:hover{
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonskyblue--color);
-    font-family: neonDos;
+.neon {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 21px #fff, 0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 0, 242), 0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
+  font-family: neonDos;
 }
 
-:root{
-    --neonpink--color:        
-    0 0 7px rgb(255, 0, 242),
-    0 0 10px rgb(255, 0, 242),
-    0 0 21px #fff,
-    0 0 42px rgb(255, 255, 255),
-    0 0 82px rgb(255, 0, 242),
-    0 0 92px rgb(255, 0, 242),
-    0 0 102px rgb(255, 0, 242),
-    0 0 151px rgb(255, 0, 242);
-    --neonskyblue--color:        
-    0 0 7px rgb(0, 255, 255),
-    0 0 21px rgb(0, 0, 0),
-    0 0 42px rgb(255, 255, 255),
-    0 0 151px rgb(0, 255, 255);
-    --neongreen--color:    
-    0 0 7px rgb(37, 211, 102),
-    0 0 21px #fff,
-    0 0 42px rgb(37, 211, 102),
-    0 0 151px rgb(37, 211, 102);
-    --neonpinktwo--color:    
-    0 0 7px rgb(255, 0, 242),
-    0 0 21px rgb(0, 0, 0),
-    0 0 42px rgb(255, 0, 242),
-    0 0 151px rgb(255, 0, 242);
+.neon:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neonDos;
 }
 
-body{
-    background-image: url(imagenesproyecto/pared.jpg);
-    z-index: 10;
+body {
+  background-image: url(imagenesproyecto/pared.jpg);
+  z-index: 10;
 }
-a:hover{
-    text-decoration: none;
-    color: #fff;
 
+a:hover {
+  text-decoration: none;
+  color: #fff;
 }
+
 /* Empieza Logo */
-header h1{
-    margin-top: 100px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 150px;
-    width: auto;
-    text-shadow:var(--neonpink--color);
-    font-family: neon;
-}
-header h1 a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-header span{ 
-    animation: blink linear infinite 1.5s;
+header h1 {
+  margin-top: 100px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 150px;
+  width: auto;
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 21px #fff, 0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 0, 242), 0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
+  font-family: neon;
 }
 
-@media only screen and(min-width:200px) and (max-width:478px){
-    header h1{
-        font-size: 50px;
-    }
-    strong{
-        font-size: 30px;
-    }
+header h1 a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-@media only screen and (max-width: 768px){
-    header h1{
-        font-size: 80px;
-    }
-    strong{
-        font-size: 30px;
-    }
+
+header span {
+  animation: blink linear infinite 1.5s;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 478px) {
+  header h1 {
+    font-size: 50px;
+  }
+
+  strong {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 80px;
+  }
+
+  strong {
+    font-size: 30px;
+  }
 }
 /* Termina Logo */
-
 /* Empieza Nav */
-header ul li{
-    list-style: none;
-    display: inline-block;
+header ul li {
+  list-style: none;
+  display: inline-block;
 }
 
-header ul ul{
-    position: absolute;
-    display: none;
+header ul ul {
+  position: absolute;
+  display: none;
 }
 
-header ul ul li{
-    display: block;
-    color: rgb(255, 255, 255);
-    text-shadow: var(--neonpink--color);
+header ul ul li {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 21px #fff, 0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 0, 242), 0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
 }
 
-header ul li :hover ul{
-    display: block;
+header ul li :hover ul {
+  display: block;
 }
 
-.barra{
-    text-align: center;
-    padding-bottom: 100px;
-    padding-top: 50px;
-}
-.menu{
-    color:rgb(255, 255, 255) ;
-    font-size: 50px;
-    letter-spacing: 0.3em ;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
-    padding-left:10px ;
-    padding-right:10px;
-	list-style: none;
-    text-shadow: var(--neonskyblue--color);
-    font-family: neonDos;
+.barra {
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
 }
 
-
-
-header .menu :hover{
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonpinktwo--color);
+.menu {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neonDos;
 }
 
-header .menu:active{
-    text-shadow: var(--neongreen--color);
-
+header .menu :hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 21px #fff, 0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 0, 242), 0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
 }
+
+header .menu:active {
+  text-shadow: 0 0 7px rgb(37, 211, 102), 0 0 21px #fff, 0 0 42px rgb(37, 211, 102), 0 0 151px rgb(37, 211, 102);
+}
+
 /* Termina Nav */
-
-
-section{
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
+section {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 /* Carousel index Hamburguesas  y Cervezas */
+.burgersind {
+  padding: 20px;
+  gap: 10px;
+}
 
-.burgersind{
-    padding: 20px;
-    gap: 10px;
-}
 .carousel-inner img {
-    width: 50%;
-    height: 50%;
-    border-radius: 40px;
-    border-color: transparent;
+  width: 50%;
+  height: 50%;
+  border-radius: 40px;
+  border-color: transparent;
 }
-.carousel-control-prev-icon,.carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    background-image: none;
-    
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-image: none;
 }
-.carousel-control-next-icon:after{
-    content: '>';
-    font-size: 55px;
-    font-weight:1000;
-    color:white;
-    text-shadow: var(--neongreen--color);
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 55px;
+  font-weight: 1000;
+  color: white;
+  text-shadow: 0 0 7px rgb(37, 211, 102), 0 0 21px #fff, 0 0 42px rgb(37, 211, 102), 0 0 151px rgb(37, 211, 102);
 }
 
 .carousel-control-prev-icon:after {
-    content: '<';
-    font-size: 55px;
-    font-weight:1000;
-    color: white;
-    text-shadow: var(--neongreen--color);
+  content: "<";
+  font-size: 55px;
+  font-weight: 1000;
+  color: white;
+  text-shadow: 0 0 7px rgb(37, 211, 102), 0 0 21px #fff, 0 0 42px rgb(37, 211, 102), 0 0 151px rgb(37, 211, 102);
 }
 
-@media only screen and (min-width:280px) {
-    .carousel-inner img {
-        width: 400px;
-        height: 400px;
-    }
+@media only screen and (min-width: 280px) {
+  .carousel-inner img {
+    width: 400px;
+    height: 400px;
+  }
 }
-
-@media only screen and (max-width:480px) {
-    .carousel-inner img {
-        width: 600px;
-        height: 600px;
-    }
-    
+@media only screen and (max-width: 480px) {
+  .carousel-inner img {
+    width: 600px;
+    height: 600px;
+  }
 }
-
-@media only screen and (min-width:1024px) {
-    .carousel-inner img {
-        width: 50%;
-        height: 50%;
-    }
+@media only screen and (min-width: 1024px) {
+  .carousel-inner img {
+    width: 50%;
+    height: 50%;
+  }
 }
-
-
 .carousel-caption {
-    top:0;
-    bottom:auto;
+  top: 0;
+  bottom: auto;
 }
 
-.neoncarousel{
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonskyblue--color);
-    font-family: neonDos;
+.neoncarousel {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neonDos;
 }
 
 .burgersindimg {
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonskyblue--color);
-    font-family: neonDos;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neonDos;
 }
 
-
-.neoncarouselb{
-    opacity: 0;
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonskyblue--color);
-    font-family: 'Lucida Sans';
-    font-size: 25px;
+.neoncarouselb {
+  opacity: 0;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: "Lucida Sans";
+  font-size: 25px;
 }
 
-.beers{
-    min-height: 100%;
-    width: 100%;
-    display: grid;
+.beers {
+  min-height: 100%;
+  width: 100%;
+  display: grid;
 }
 
-.carouselimgind:hover img{
-    opacity: 0.3;
-}   
-.carouselimgind:hover .neoncarouselb{
-    opacity: 1;
-}
-.carouselimgind img{
-    width: 580px;
-    height: 580px;
+.carouselimgind:hover img {
+  opacity: 0.3;
 }
 
-@media only screen and (min-width:280px) {
-    .carouselimgind img {
-        width: 400px;
-        height: 400px;
-    }
+.carouselimgind:hover .neoncarouselb {
+  opacity: 1;
 }
 
-@media only screen and (max-width:480px) {
-    .carouselimgind img {
-        width: 600px;
-        height: 600px;
-    }
-    
+.carouselimgind img {
+  width: 580px;
+  height: 580px;
 }
 
-#antind{
-    font-size: 65px;
-    text-decoration: none;
+@media only screen and (min-width: 280px) {
+  .carouselimgind img {
+    width: 400px;
+    height: 400px;
+  }
 }
-#strangeind{
-    font-size: 65px;
-    text-decoration: none;
+@media only screen and (max-width: 480px) {
+  .carouselimgind img {
+    width: 600px;
+    height: 600px;
+  }
+}
+#antind {
+  font-size: 65px;
+  text-decoration: none;
 }
 
-@media only screen and (min-width: 1024px){
-    .beers{
-        grid-template-columns: 1fr 1fr;
-    }    
-    .beerlogoind1{
-        grid-column: 1/1;
-        grid-row: 1/4;
-    }
-    .beerlogoind2{
-        grid-column: 2/2;
-        grid-row: 1/4;
-    }  
+#strangeind {
+  font-size: 65px;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .beers {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .beerlogoind1 {
+    grid-column: 1/1;
+    grid-row: 1/4;
+  }
+
+  .beerlogoind2 {
+    grid-column: 2/2;
+    grid-row: 1/4;
+  }
 }
 /* Termina carouseles index hamburguesas y cervezas */
-
 /* Empieza Localizacion Horario y Mapa */
-.locate{
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.locate {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.locate p{
-    font-size: 25px;
-    text-shadow: var(--neonskyblue--color);
-    color: #fff;
+
+.locate p {
+  font-size: 25px;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  color: #fff;
 }
-.mapview{
-    width:400px ;
-    height:350px;
+
+.mapview {
+  width: 400px;
+  height: 350px;
 }
-#donde{
-    font-size: 60px;
-    margin: 5%;
+
+#donde {
+  font-size: 60px;
+  margin: 5%;
 }
-#time{
-    font-size: 50px;
-    margin: 5%;
+
+#time {
+  font-size: 50px;
+  margin: 5%;
 }
+
 /* Termina Localizacion Horario Y Mapa */
-
-
 /*Empieza Menu */
-#menuneon{
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 10%;
+#menuneon {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 10%;
 }
+
 /* Empieza Hamburguesas */
-.burgermenu{
-    width: 100%;
-    display: grid;
-    min-height: 300px;
-}   
-.nombreh{
-    font-size: 45px;
-    color: #fff;
-    text-shadow: var(--neonskyblue--color);
-    font-family: neondos;
-}
-.burgersmenuimg{
-    display: grid;
-    border: 2px solid #000;
-    border-radius:7px ;
-    box-shadow:0 0 5px #333 ;
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonskyblue--color);
-    font-family: neonDos;
-}
-.burgermenu1{
-    background-image: url(imagenesproyecto/chicken.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.burgermenu2{
-    background-image: url(imagenesproyecto/classic.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.burgermenu3{
-    background-image: url(imagenesproyecto/rustik.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.burgermenu4{
-    background-image: url(imagenesproyecto/vegancheese.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.burgermenu5{
-    background-image: url(imagenesproyecto/vegan.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 300px;
-}
-.ingredientes{
-    color: #fff;
-    font-size: 40px;
-    text-shadow: var(--neongreen--color);
-    font-family: neondos;
+.burgermenu {
+  width: 100%;
+  display: grid;
+  min-height: 300px;
 }
 
-@media only screen and (min-width:280px)and(max-width:479px){
-    .burgersmenu1{
-        grid-template-columns: 1fr;
-    }
+.nombreh {
+  font-size: 45px;
+  color: #fff;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neondos;
 }
 
-@media only screen and (min-width: 580px){
-    .burgersmenu1{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .nombreh1{
-        grid-column: 1/1;
-        grid-row: 1/1;
-    }
-    .ingredientes1{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .burgermenu1{
-        grid-column: 3/5;
-        grid-row: 1/5;
-    }
-    .nombreh2{
-        grid-column: 4/5;
-        grid-row: 1/1;
-    }
-    .ingredientes2{
-        grid-column: 4/5;
-        grid-row: 2/2;
-    }
-    .burgermenu2{
-        grid-column: 1/3;
-        grid-row: 1/5;
-    }
-    .nombreh3{
-        grid-column: 1/1;
-        grid-row: 1/1;
-    }
-    .ingredientes3{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .burgermenu3{
-        grid-column: 3/5;
-        grid-row: 1/5;
-    }
-    .nombreh4{
-        grid-column: 4/5;
-        grid-row: 1/1;
-    }
-    .ingredientes4{
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    .burgermenu4{
-        grid-column: 1/3;
-        grid-row: 1/4;
-    }
-    .nombreh5{
-        grid-column: 1/1;
-        grid-row: 1/1;
-    }
-    .ingredientes5{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .burgermenu5{
-        grid-column: 3/5;
-        grid-row: 1/4;
-    }
+.burgersmenuimg {
+  display: grid;
+  border: 2px solid #000;
+  border-radius: 7px;
+  box-shadow: 0 0 5px #333;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neonDos;
+}
+
+.burgermenu1 {
+  background-image: url(imagenesproyecto/chicken.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.burgermenu2 {
+  background-image: url(imagenesproyecto/classic.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.burgermenu3 {
+  background-image: url(imagenesproyecto/rustik.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.burgermenu4 {
+  background-image: url(imagenesproyecto/vegancheese.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.burgermenu5 {
+  background-image: url(imagenesproyecto/vegan.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.ingredientes {
+  color: #fff;
+  font-size: 40px;
+  text-shadow: 0 0 7px rgb(37, 211, 102), 0 0 21px #fff, 0 0 42px rgb(37, 211, 102), 0 0 151px rgb(37, 211, 102);
+  font-family: neondos;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 479px) {
+  .burgersmenu1 {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 580px) {
+  .burgersmenu1 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .nombreh1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .ingredientes1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .burgermenu1 {
+    grid-column: 3/5;
+    grid-row: 1/5;
+  }
+
+  .nombreh2 {
+    grid-column: 4/5;
+    grid-row: 1/1;
+  }
+
+  .ingredientes2 {
+    grid-column: 4/5;
+    grid-row: 2/2;
+  }
+
+  .burgermenu2 {
+    grid-column: 1/3;
+    grid-row: 1/5;
+  }
+
+  .nombreh3 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .ingredientes3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .burgermenu3 {
+    grid-column: 3/5;
+    grid-row: 1/5;
+  }
+
+  .nombreh4 {
+    grid-column: 4/5;
+    grid-row: 1/1;
+  }
+
+  .ingredientes4 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .burgermenu4 {
+    grid-column: 1/3;
+    grid-row: 1/4;
+  }
+
+  .nombreh5 {
+    grid-column: 1/1;
+    grid-row: 1/1;
+  }
+
+  .ingredientes5 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .burgermenu5 {
+    grid-column: 3/5;
+    grid-row: 1/4;
+  }
 }
 /* Termina Hamburguesas */
 /*Empieza Guarniciones */
-.guarnicionneon{
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 5%;
+.guarnicionneon {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 5%;
 }
 
-.guarnicion{
-    display: grid;
-    align-items: center;
-    justify-content: center;
-}
-.guar{
-    width: 70%;
-    flex-direction: row;
-    padding-left: 10px;
-    border-radius: 20px; 
-    transition: transform .2s;
-}
-.guar:hover{
-    transform: scale(1.1);
-}
-.preciosguar{
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    text-shadow: var(--neonskyblue--color);
-    margin-bottom: 10%;
+.guarnicion {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-@media only screen and (min-width: 480px) and (max-width:768px){
-    .guarnicion{
-        grid-template-columns: 1fr;
-    }
-    .guar{
-        max-height: 300px;
-        padding: 10px;
-    }
-    
+.guar {
+  width: 70%;
+  flex-direction: row;
+  padding-left: 10px;
+  border-radius: 20px;
+  transition: transform 0.2s;
 }
 
-@media only screen and (min-width: 768px) and (max-width:1023px){
-    .guarnicion{
-        grid-template-columns:1fr 1fr 1fr;
-    }
-    .guar{
-        max-height: 300px;
-
-    }
-    
+.guar:hover {
+  transform: scale(1.1);
 }
 
-@media only screen and (min-width:1023px) {
-    .guarnicion{
-        grid-template-columns:1fr 1fr 1fr;
-    }
-    .guar{
-        max-height: 300px;
-    }
-    
+.preciosguar {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  margin-bottom: 10%;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .guarnicion {
+    grid-template-columns: 1fr;
+  }
+
+  .guar {
+    max-height: 300px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .guarnicion {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .guar {
+    max-height: 300px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  .guarnicion {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .guar {
+    max-height: 300px;
+  }
 }
 /* Termina Guarnicion */
 /* Termina Menu*/
-
 /*Empieza Birras */
-.birrasneon{
-    text-align: center;
-    font-size: 80px;
-    margin-bottom: 5%;
+.birrasneon {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 5%;
 }
 
-.preciosbirra{
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
-    text-shadow: var(--neonskyblue--color);
-    margin-bottom: 5%;
-}
-.birrasbirra{
-    max-width: 278px;
-    max-height: 330px;
-    transition: transform .2s;
+.preciosbirra {
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  margin-bottom: 5%;
 }
 
-.birrasbirra:hover{
-    transform: scale(1.1);
+.birrasbirra {
+  max-width: 278px;
+  max-height: 330px;
+  transition: transform 0.2s;
 }
-.neonbirras{
-    font-size: 25px;
-    font-family:'Lucida Sans';
-    text-shadow: var(--neonskyblue--color);
-    color: #fff;
-    text-align: center;
+
+.birrasbirra:hover {
+  transform: scale(1.1);
+}
+
+.neonbirras {
+  font-size: 25px;
+  font-family: "Lucida Sans";
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  color: #fff;
+  text-align: center;
 }
 
 /*Termina Birras */
-
 /* Empieza Nosotros */
-
 .fotonosotros {
-    margin: 5%;
-    width: 100%;
-    height: 500px;
-    max-height: 50%;
-    border: #000;
-    border-radius: 10%;
-    transition: transform .2s;
+  margin: 5%;
+  width: 100%;
+  height: 500px;
+  max-height: 50%;
+  border: #000;
+  border-radius: 10%;
+  transition: transform 0.2s;
 }
 
-.fotonosotros:hover{
-    transform: scale(1.1);
-}
-.texto{
-    font-family:'Lucilda sans';
-    color:#fff;
-    text-align: center;
-    text-shadow: var(--neonskyblue--color);
-    font-size: 30px;
-    margin: 5%;
+.fotonosotros:hover {
+  transform: scale(1.1);
 }
 
-#reserva{
-    text-align: center;
-    font-size: 80px;
+.texto {
+  font-family: "Lucilda sans";
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-size: 30px;
+  margin: 5%;
+}
+
+#reserva {
+  text-align: center;
+  font-size: 80px;
 }
 
 form {
-    color: #fff;
-    text-shadow: var(--neonskyblue--color);
-    width: 80%;
-    margin: 0 auto;
+  color: #fff;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  width: 80%;
+  margin: 0 auto;
 }
 
 label, input {
-    display: inline-block;
+  display: inline-block;
 }
+
 label {
-    width: 30%;
-    text-align: right;
-}
-button.enviar{
-    background-color: transparent;
-    text-shadow: var(--neonskyblue--color);
-    color: #fff;
+  width: 30%;
+  text-align: right;
 }
 
-button.enviar:hover{
-    background-color: black;
-    text-shadow: var(--neonpinktwo--color);
-    color: #fff;
+button.enviar {
+  background-color: transparent;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  color: #fff;
 }
 
-label+input {
-    width: 30%;
-    margin: 0 30% 0 4%;
+button.enviar:hover {
+  background-color: black;
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
+  color: #fff;
 }
 
-@media only screen and (min-width:200px) and (max-width:500px) {
-    .fotonosotros {
-        margin: 5%;
-        width: 300px;
-        height: 300px;
-    }
-    .nosotroslocate{
-        width:400px ;
-        height:300px;
-    }
-    #reserva{
-        font-size: 60px;
-    }
-    #donde{
-        font-size: 40px;
-    }
-    
+label + input {
+  width: 30%;
+  margin: 0 30% 0 4%;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .fotonosotros {
+    margin: 5%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .nosotroslocate {
+    width: 400px;
+    height: 300px;
+  }
+
+  #reserva {
+    font-size: 60px;
+  }
+
+  #donde {
+    font-size: 40px;
+  }
 }
 /*termina nosotros*/
-
 /*empieza footer todas las paginas */
-.subir{
-    font-size: 50px;
-    height: 70px;
-    width: 70px;
-    color: #fff;
-    text-shadow: var(--neonpinktwo--color);
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-.subir:hover{
-    color: rgb(255, 255, 255);
-    text-shadow:var(--neonskyblue--color);
-    font-family: neonDos;
+.subir {
+  font-size: 50px;
+  height: 70px;
+  width: 70px;
+  color: #fff;
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 
-
-
-footer{
-    word-spacing: 1em;
-    height: 150px;
-    background-color:transparent;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 75px;
-}
-footer #fb{
-    color: white;
-    text-shadow: var(--neonskyblue--color);
+.subir:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+  font-family: neonDos;
 }
 
-footer #wsp{
-    color: rgb(37, 211, 102);
-    text-shadow: var(--neongreen--color);
+footer {
+  word-spacing: 1em;
+  height: 150px;
+  background-color: transparent;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 75px;
 }
 
-footer #ig{
-    color: white;
-    text-shadow: var(--neonpink--color);
+footer #fb {
+  color: white;
+  text-shadow: 0 0 7px rgb(0, 255, 255), 0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255), 0 0 151px rgb(0, 255, 255);
+}
+
+footer #wsp {
+  color: rgb(37, 211, 102);
+  text-shadow: 0 0 7px rgb(37, 211, 102), 0 0 21px #fff, 0 0 42px rgb(37, 211, 102), 0 0 151px rgb(37, 211, 102);
+}
+
+footer #ig {
+  color: white;
+  text-shadow: 0 0 7px rgb(255, 0, 242), 0 0 10px rgb(255, 0, 242), 0 0 21px #fff, 0 0 42px rgb(255, 255, 255), 0 0 82px rgb(255, 0, 242), 0 0 92px rgb(255, 0, 242), 0 0 102px rgb(255, 0, 242), 0 0 151px rgb(255, 0, 242);
 }
 
 /*termina footer todas las paginas*/
+
+/*# sourceMappingURL=estilos.css.map */
