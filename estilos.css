@@ -91,18 +91,12 @@ header span {
     font-size: 50px;
   }
 
-  strong {
-    font-size: 30px;
-  }
 }
 @media only screen and (max-width: 768px) {
   header h1 {
     font-size: 80px;
   }
 
-  strong {
-    font-size: 30px;
-  }
 }
 /* Termina Logo */
 /* Empieza Nav */
