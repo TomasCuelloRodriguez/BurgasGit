@@ -239,10 +239,12 @@ section{
 }
 
 #antind{
+    @extend .neon;
     font-size: 65px;
     text-decoration: none;
 }
 #strangeind{
+    @extend .neon;
     font-size: 65px;
     text-decoration: none;
 }
@@ -278,11 +280,13 @@ section{
     width:400px ;
     height:350px;
 }
-#donde{
+.donde{
+    @extend .neon;
     font-size: 60px;
     margin: 5%;
 }
-#time{
+.time{
+    @extend .neon;
     font-size: 50px;
     margin: 5%;
 }
@@ -290,7 +294,8 @@ section{
 
 
 /*Empieza Menu */
-#menuneon{
+.menuneon{
+    @extend .neon;
     text-align: center;
     font-size: 80px;
     margin-bottom: 10%;
@@ -312,9 +317,7 @@ section{
     border: 2px solid #000;
     border-radius:7px ;
     box-shadow:0 0 5px #333 ;
-    color: rgb(255, 255, 255);
-    text-shadow:$--neonskyblue--color;
-    font-family: neonDos;
+
 }
 .burgermenu1{
     background-image: url(imagenesproyecto/chicken.jpg);
@@ -427,6 +430,7 @@ section{
 /* Termina Hamburguesas */
 /*Empieza Guarniciones */
 .guarnicionneon{
+    @extend .neon;
     text-align: center;
     font-size: 80px;
     margin-bottom: 5%;
@@ -491,6 +495,7 @@ section{
 
 /*Empieza Birras */
 .birrasneon{
+    @extend .neon;
     text-align: center;
     font-size: 80px;
     margin-bottom: 5%;
@@ -546,7 +551,8 @@ section{
     margin: 5%;
 }
 
-#reserva{
+.reserva{
+    @extend .neon;
     text-align: center;
     font-size: 80px;
 }
@@ -629,19 +635,27 @@ footer{
     text-align: center;
     padding-top: 75px;
 }
-footer #fb{
-    color: white;
-    text-shadow: $--neonskyblue--color;
-}
 
-footer #wsp{
-    color: rgb(37, 211, 102);
-    text-shadow: $--neongreen--color;
-}
+$redes: (
+    red1: rgb(37, 211, 102),
+    red2: white,
+    red3: white,
+);
 
-footer #ig{
-    color: white;
-    text-shadow: $--neonpink--color;
+@each $red, $color in $redes {
+    .btn--#{$red}{
+    color: $color;
+    @if $red == red1{
+        text-shadow: $--neongreen--color;
+    }
+    @else if $red == red2{
+        text-shadow: $--neonpink--color;
+    }
+    @else{
+        text-shadow: $--neonskyblue--color;
+    }
+    }
+    
 }
 
 /*termina footer todas las paginas*/
