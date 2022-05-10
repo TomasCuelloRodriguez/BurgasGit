@@ -2,6 +2,7 @@
 
 *{
     margin: 0;
+    margin-bottom: 1%;
     padding: 0;
     box-sizing: border-box;
 }
@@ -317,37 +318,40 @@ section{
     border: 2px solid #000;
     border-radius:7px ;
     box-shadow:0 0 5px #333 ;
-
+    margin: 5%;
+}
+@mixin sizes($heigth) {
+    height: $heigth;
 }
 .burgermenu1{
     background-image: url(imagenesproyecto/chicken.jpg);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    @include sizes(400px);
 }
 .burgermenu2{
     background-image: url(imagenesproyecto/classic.jpg);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    @include sizes(400px);
 }
 .burgermenu3{
     background-image: url(imagenesproyecto/rustik.jpg);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    @include sizes(400px);
 }
 .burgermenu4{
     background-image: url(imagenesproyecto/vegancheese.jpg);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    @include sizes(400px);
 }
 .burgermenu5{
     background-image: url(imagenesproyecto/vegan.jpg);
     background-position: center;
     background-size: cover;
-    height: 300px;
+    @include sizes(400px);
 }
 .ingredientes{
     color: #fff;
@@ -609,21 +613,7 @@ label+input {
 /*termina nosotros*/
 
 /*empieza footer todas las paginas */
-.subir{
-    font-size: 50px;
-    height: 70px;
-    width: 70px;
-    color: #fff;
-    text-shadow: $--neonpinktwo--color;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-}
-.subir:hover{
-    color: rgb(255, 255, 255);
-    text-shadow:$--neonskyblue--color;
-    font-family: neonDos;
-}
+
 
 
 
@@ -637,25 +627,39 @@ footer{
 }
 
 $redes: (
-    red1: rgb(37, 211, 102),
-    red2: white,
-    red3: white,
+    wsp: rgb(37, 211, 102),
+    ig: white,
+    fb: rgba(255, 255, 255, 0.696),
 );
 
 @each $red, $color in $redes {
     .btn--#{$red}{
     color: $color;
-    @if $red == red1{
+    @if $red == wsp{
         text-shadow: $--neongreen--color;
     }
-    @else if $red == red2{
+    @else if $red == ig{
         text-shadow: $--neonpink--color;
     }
     @else{
         text-shadow: $--neonskyblue--color;
     }
     }
-    
+}
+.subir{
+    font-size: 50px;
+    height: 70px;
+    width: 70px;
+    color: map-get($map: $redes, $key:fb );
+    text-shadow: $--neonpinktwo--color;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.subir:hover{
+    color:  map-get($map: $redes, $key:fb );
+    text-shadow:$--neonskyblue--color;
+    font-family: neonDos;
 }
 
 /*termina footer todas las paginas*/

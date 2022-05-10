@@ -76,6 +76,7 @@
 
 * {
   margin: 0;
+  margin-bottom: 1%;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -421,41 +422,42 @@ section {
   border-radius: 7px;
   -webkit-box-shadow: 0 0 5px #333;
           box-shadow: 0 0 5px #333;
+  margin: 5%;
 }
 
 .burgermenu1 {
   background-image: url(imagenesproyecto/chicken.jpg);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 
 .burgermenu2 {
   background-image: url(imagenesproyecto/classic.jpg);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 
 .burgermenu3 {
   background-image: url(imagenesproyecto/rustik.jpg);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 
 .burgermenu4 {
   background-image: url(imagenesproyecto/vegancheese.jpg);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 
 .burgermenu5 {
   background-image: url(imagenesproyecto/vegan.jpg);
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 400px;
 }
 
 .ingredientes {
@@ -793,23 +795,6 @@ label + input {
 
 /*termina nosotros*/
 /*empieza footer todas las paginas */
-.subir {
-  font-size: 50px;
-  height: 70px;
-  width: 70px;
-  color: #fff;
-  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-}
-
-.subir:hover {
-  color: white;
-  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
-  font-family: neonDos;
-}
-
 footer {
   word-spacing: 1em;
   height: 150px;
@@ -819,19 +804,36 @@ footer {
   padding-top: 75px;
 }
 
-.btn--red1 {
+.btn--wsp {
   color: #25d366;
   text-shadow: 0 0 7px #25d366, 0 0 21px #fff, 0 0 42px #25d366, 0 0 151px #25d366;
 }
 
-.btn--red2 {
+.btn--ig {
   color: white;
   text-shadow: 0 0 7px #ff00f2, 0 0 10px #ff00f2, 0 0 21px #fff, 0 0 42px white, 0 0 82px #ff00f2, 0 0 92px #ff00f2, 0 0 102px #ff00f2, 0 0 151px #ff00f2;
 }
 
-.btn--red3 {
-  color: white;
+.btn--fb {
+  color: rgba(255, 255, 255, 0.696);
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
+}
+
+.subir {
+  font-size: 50px;
+  height: 70px;
+  width: 70px;
+  color: rgba(255, 255, 255, 0.696);
+  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.subir:hover {
+  color: rgba(255, 255, 255, 0.696);
+  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
+  font-family: neonDos;
 }
 
 /*termina footer todas las paginas*/
