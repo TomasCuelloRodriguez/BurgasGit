@@ -18,7 +18,7 @@
     font-family: neonDos;
 }
 body{
-    background-image: url(imagenesproyecto/pared.jpg);
+    background-image: url(imagenesproyecto/pared2.jpg);
     z-index: 10;
 }
 a:hover{
@@ -30,9 +30,7 @@ a:hover{
 header h1{
     margin-top: 100px;
     text-align: center;
-    text-transform: capitalize;
     font-size: 150px;
-    width: auto;
     text-shadow:$--neonpink--color;
     font-family: neon;
 }
@@ -144,7 +142,6 @@ section{
 .carousel-control-next-icon:after{
     content: '>';
     font-size: 55px;
-    font-weight:1000;
     color:white;
     text-shadow: $--neongreen--color;
     font-family: neonNombre;
@@ -153,7 +150,6 @@ section{
 .carousel-control-prev-icon:after {
     content: '<';
     font-size: 55px;
-    font-weight:1000;
     color: white;
     text-shadow: $--neongreen--color;
     font-family: neonNombre;
@@ -592,10 +588,7 @@ span.nombreh{
 
 @media  only screen and (max-width:479px){
     .menuneon{
-        font-size: 35px;
-    }
-    .nombreh{
-        font-size: 30px;
+        font-size: 55px;
     }
     .ingredientes{
         font-size: 25px;
@@ -605,6 +598,13 @@ span.nombreh{
     }
     .preciosguar{
         font-size: 30px;
+    }
+    .nombreh{
+        font-size: 55px;
+        margin-top: 5%;
+    }
+    span.nombreh{
+        font-size: 25px;
     }
 }
 
@@ -797,14 +797,7 @@ label+input {
 
 
 
-footer{
-    word-spacing: 1em;
-    height: 150px;
-    background-color:transparent;
-    font-size: 50px;
-    text-align: center;
-    padding-top: 75px;
-}
+
 
 $redes: (
     wsp: rgb(37, 211, 102),
@@ -827,20 +820,22 @@ $redes: (
     }
 }
 .subir{
-    font-size: 50px;
-    height: 70px;
-    width: 70px;
     color: map-get($map: $redes, $key:fb );
     text-shadow: $--neonpinktwo--color;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
 }
 .subir:hover{
     color:  map-get($map: $redes, $key:fb );
     text-shadow:$--neonskyblue--color;
     font-family: neonDos;
     
+}
+footer{
+    word-spacing: 1em;
+    height: 150px;
+    background-color:transparent;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 75px;
 }
 
 @media only screen and (min-width: 200px) and (max-width:700px) {
