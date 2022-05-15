@@ -87,13 +87,13 @@
   margin-bottom: 2%;
 }
 
-.neon, #antind, #strangeind, .donde, .time, .menuneon, .guarnicionneon, .birrasneon, .reserva {
+.neon, #antind, #strangeind, .donde, .time, .menuneon, .guarnicionneon, .birrasneon, .nosotros, .reserva {
   color: white;
   text-shadow: 0 0 7px #ff00f2, 0 0 10px #ff00f2, 0 0 21px #fff, 0 0 42px white, 0 0 82px #ff00f2, 0 0 92px #ff00f2, 0 0 102px #ff00f2, 0 0 151px #ff00f2;
   font-family: neonDos;
 }
 
-.neon:hover, #antind:hover, #strangeind:hover, .donde:hover, .time:hover, .menuneon:hover, .guarnicionneon:hover, .birrasneon:hover, .reserva:hover {
+.neon:hover, #antind:hover, #strangeind:hover, .donde:hover, .time:hover, .menuneon:hover, .guarnicionneon:hover, .birrasneon:hover, .nosotros:hover, .reserva:hover {
   color: white;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   font-family: neonDos;
@@ -154,8 +154,8 @@ header ul li :hover ul {
 
 .barra {
   text-align: center;
-  padding-bottom: 100px;
-  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 .menu {
@@ -205,7 +205,6 @@ header .menu:active {
 
 /* Termina Nav */
 section {
-  margin-bottom: 10px;
   width: 100%;
   text-align: center;
 }
@@ -855,7 +854,7 @@ span.nombreh {
     padding: 10px;
   }
   .menuneon {
-    font-size: 55px;
+    font-size: 65px;
   }
 }
 
@@ -936,8 +935,14 @@ span.nombreh {
 
 /*Termina Birras */
 /* Empieza Nosotros */
+.nosotros {
+  text-align: center;
+  font-size: 80px;
+  margin-bottom: 5%;
+}
+
 .fotonosotros {
-  margin: 5%;
+  margin-top: 5%;
   width: 100%;
   height: 500px;
   max-height: 50%;
@@ -984,6 +989,7 @@ label, input {
 label {
   width: 30%;
   text-align: right;
+  font-size: 20px;
 }
 
 button.enviar {
@@ -1003,9 +1009,9 @@ label + input {
   margin: 0 30% 0 4%;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 500px) {
+@media only screen and (min-width: 200px) and (max-width: 800px) {
   .fotonosotros {
-    margin: 5%;
+    margin-top: 5%;
     width: 300px;
     height: 300px;
   }
@@ -1013,11 +1019,19 @@ label + input {
     width: 400px;
     height: 300px;
   }
-  #reserva {
+  .reserva {
     font-size: 60px;
+    margin: 15%;
   }
-  #donde {
+  .donde {
     font-size: 40px;
+  }
+  .nosotros {
+    font-size: 60px;
+    margin: 10%;
+  }
+  .texto {
+    margin: 5%;
   }
 }
 
