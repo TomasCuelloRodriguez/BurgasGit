@@ -5,6 +5,11 @@
 
 @font-face {
   font-family: neonDos;
+  src: url(fonts/NEONGLOW.otf);
+}
+
+@font-face {
+  font-family: neonNombre;
   src: url(fonts/Neon.ttf);
 }
 
@@ -119,7 +124,7 @@ header h1 a {
   color: white;
 }
 
-header span {
+span {
   -webkit-animation: blink linear infinite 1.5s;
           animation: blink linear infinite 1.5s;
 }
@@ -167,10 +172,10 @@ header ul li :hover ul {
   padding-right: 10px;
   list-style: none;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
-  font-family: neonDos;
+  font-family: neonNombre;
 }
 
-header .menu :hover {
+.menu:hover {
   color: white;
   text-shadow: 0 0 7px #ff00f2, 0 0 10px #ff00f2, 0 0 21px #fff, 0 0 42px white, 0 0 82px #ff00f2, 0 0 92px #ff00f2, 0 0 102px #ff00f2, 0 0 151px #ff00f2;
 }
@@ -229,6 +234,7 @@ section {
   font-weight: 1000;
   color: white;
   text-shadow: 0 0 7px #25d366, 0 0 21px #fff, 0 0 42px #25d366, 0 0 151px #25d366;
+  font-family: Neondos;
 }
 
 .carousel-control-prev-icon:after {
@@ -237,6 +243,7 @@ section {
   font-weight: 1000;
   color: white;
   text-shadow: 0 0 7px #25d366, 0 0 21px #fff, 0 0 42px #25d366, 0 0 151px #25d366;
+  font-family: Neondos;
 }
 
 .carousel-caption {
@@ -448,7 +455,7 @@ section {
 }
 
 .nombreh {
-  font-size: 45px;
+  font-size: 65px;
   color: #fff;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   font-family: neondos;
@@ -501,9 +508,15 @@ section {
 
 .ingredientes {
   color: #fff;
-  font-size: 40px;
-  text-shadow: 0 0 7px #25d366, 0 0 21px #fff, 0 0 42px #25d366, 0 0 151px #25d366;
+  font-size: 35px;
+  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   font-family: neondos;
+}
+
+.ingredientes span {
+  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
+  -webkit-animation: blink linear infinite 1.0s;
+          animation: blink linear infinite 1.0s;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 1022px) {
@@ -1012,7 +1025,6 @@ footer {
 }
 
 .subir {
-  font-size: 50px;
   height: 70px;
   width: 70px;
   color: rgba(255, 255, 255, 0.696);
@@ -1026,6 +1038,12 @@ footer {
   color: rgba(255, 255, 255, 0.696);
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   font-family: neonDos;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  footer {
+    font-size: 35px;
+  }
 }
 
 /*termina footer todas las paginas*/

@@ -39,7 +39,7 @@ header h1 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-header span{ 
+span{ 
     animation: blink linear infinite 1.5s;
 }
 
@@ -88,8 +88,7 @@ header ul li :hover ul{
 }
 
 
-
-header .menu :hover{
+.menu:hover{
     color: rgb(255, 255, 255);
     text-shadow:$--neonpink--color;
 }
@@ -148,6 +147,7 @@ section{
     font-weight:1000;
     color:white;
     text-shadow: $--neongreen--color;
+    font-family: Neondos;
 }
 
 .carousel-control-prev-icon:after {
@@ -156,6 +156,7 @@ section{
     font-weight:1000;
     color: white;
     text-shadow: $--neongreen--color;
+    font-family: Neondos;
 }
 
 
@@ -341,11 +342,13 @@ section{
     min-height: 300px;
 }   
 .nombreh{
-    font-size: 45px;
+    font-size: 65px;
     color: #fff;
     text-shadow: $--neonskyblue--color;
-    font-family: neondos;
+    font-family: neonNombre;
 }
+
+
 .burgersmenuimg{
     display: grid;
     border: 2px solid #000;
@@ -388,9 +391,13 @@ section{
 }
 .ingredientes{
     color: #fff;
-    font-size: 40px;
-    text-shadow: $--neongreen--color;
+    font-size: 35px;
+    text-shadow: $--neonskyblue--color;
     font-family: neondos;
+}
+.ingredientes span{
+    text-shadow: $--neonpinktwo--color;
+    animation: blink linear infinite 1.s;
 }
 
 @media only screen and (min-width:280px)and(max-width:1022px){
@@ -783,7 +790,6 @@ $redes: (
     }
 }
 .subir{
-    font-size: 50px;
     height: 70px;
     width: 70px;
     color: map-get($map: $redes, $key:fb );
@@ -796,6 +802,13 @@ $redes: (
     color:  map-get($map: $redes, $key:fb );
     text-shadow:$--neonskyblue--color;
     font-family: neonDos;
+}
+
+@media only screen and (min-width: 200px) and (max-width:500px) {
+    footer{
+        font-size: 35px;
+    }
+    
 }
 
 /*termina footer todas las paginas*/

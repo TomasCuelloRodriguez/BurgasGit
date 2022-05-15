@@ -29,8 +29,11 @@ $--neonpinktwo--color:
     }
     @font-face {
         font-family: neonDos;
-        src: url(fonts/Neon.ttf);
-        
+        src: url(fonts/NEONGLOW.otf);
+    }
+    @font-face{
+        font-family: neonNombre;
+        src: url(fonts/Lobster-Regular.ttf)
     }
     @keyframes blink {
         78% {
