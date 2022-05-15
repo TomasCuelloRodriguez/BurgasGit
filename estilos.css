@@ -84,6 +84,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 2%;
 }
 
 .neon, #antind, #strangeind, .donde, .time, .menuneon, .guarnicionneon, .birrasneon, .reserva {
