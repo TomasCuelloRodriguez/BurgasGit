@@ -100,7 +100,7 @@
 }
 
 body {
-  background-image: url(imagenesproyecto/pared2.jpg);
+  background-image: url(imagenesproyecto/pared.jpg);
   z-index: 10;
 }
 
@@ -245,13 +245,6 @@ section {
 .carousel-caption {
   top: 0;
   bottom: auto;
-}
-
-.neoncarousel {
-  font-size: 50px;
-  color: white;
-  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
-  font-family: neonDos;
 }
 
 .burgersindimg {
@@ -455,7 +448,7 @@ section {
 }
 
 .nombreh {
-  font-size: 65px;
+  font-size: 45px;
   color: #fff;
   text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
   font-family: neonNombre;
@@ -836,7 +829,7 @@ span.nombreh {
     font-size: 30px;
   }
   .nombreh {
-    font-size: 55px;
+    font-size: 45px;
     margin-top: 5%;
   }
   span.nombreh {

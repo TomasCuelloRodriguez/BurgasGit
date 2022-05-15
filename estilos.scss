@@ -18,7 +18,7 @@
     font-family: neonDos;
 }
 body{
-    background-image: url(imagenesproyecto/pared2.jpg);
+    background-image: url(imagenesproyecto/pared.jpg);
     z-index: 10;
 }
 a:hover{
@@ -161,12 +161,6 @@ section{
     bottom:auto;
 }
 
-.neoncarousel{
-    font-size: 50px;
-    color: rgb(255, 255, 255);
-    text-shadow:$--neonskyblue--color;
-    font-family: neonDos;
-}
 
 .burgersindimg {
     font-size: 50px;
@@ -340,7 +334,7 @@ section{
     min-height: 300px;
 }   
 .nombreh{
-    font-size: 65px;
+    font-size: 45px;
     color: #fff;
     text-shadow:$--neonpinktwo--color;
     font-family: neonNombre;
@@ -600,7 +594,7 @@ span.nombreh{
         font-size: 30px;
     }
     .nombreh{
-        font-size: 55px;
+        font-size: 45px;
         margin-top: 5%;
     }
     span.nombreh{
@@ -620,6 +614,7 @@ span.nombreh{
         font-size: 65px;
     }
 }
+
 
 @media only screen and (min-width: 768px) and (max-width:1023px){
     .guarnicion{
