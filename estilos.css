@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: neonNombre;
-  src: url(fonts/Neon.ttf);
+  src: url(fonts/Lobster-Regular.ttf);
 }
 
 @-webkit-keyframes blink {
@@ -124,7 +124,7 @@ header h1 a {
   color: white;
 }
 
-span {
+header span {
   -webkit-animation: blink linear infinite 1.5s;
           animation: blink linear infinite 1.5s;
 }
@@ -172,7 +172,7 @@ header ul li :hover ul {
   padding-right: 10px;
   list-style: none;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
-  font-family: neonNombre;
+  font-family: neonDos;
 }
 
 .menu:hover {
@@ -234,7 +234,7 @@ section {
   font-weight: 1000;
   color: white;
   text-shadow: 0 0 7px #25d366, 0 0 21px #fff, 0 0 42px #25d366, 0 0 151px #25d366;
-  font-family: Neondos;
+  font-family: neonNombre;
 }
 
 .carousel-control-prev-icon:after {
@@ -243,7 +243,7 @@ section {
   font-weight: 1000;
   color: white;
   text-shadow: 0 0 7px #25d366, 0 0 21px #fff, 0 0 42px #25d366, 0 0 151px #25d366;
-  font-family: Neondos;
+  font-family: neonNombre;
 }
 
 .carousel-caption {
@@ -269,15 +269,11 @@ section {
   opacity: 0;
   color: white;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
-  font-family: 'Lucida Sans';
+  font-family: neonNombre;
   font-size: 25px;
-}
-
-.beers {
-  min-height: 100%;
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carouselimgind:hover img {
@@ -291,6 +287,13 @@ section {
 .carouselimgind img {
   width: 580px;
   height: 580px;
+}
+
+.beers {
+  min-height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
 }
 
 #antind {
@@ -421,6 +424,7 @@ section {
   font-size: 25px;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   color: #fff;
+  font-family: neonNombre;
 }
 
 .mapview {
@@ -443,7 +447,7 @@ section {
 .menuneon {
   text-align: center;
   font-size: 80px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 /* Empieza Hamburguesas */
@@ -457,8 +461,13 @@ section {
 .nombreh {
   font-size: 65px;
   color: #fff;
-  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
-  font-family: neondos;
+  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
+  font-family: neonNombre;
+}
+
+span.nombreh {
+  font-size: 35px;
+  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
 }
 
 .burgersmenuimg {
@@ -509,14 +518,8 @@ section {
 .ingredientes {
   color: #fff;
   font-size: 35px;
-  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
+  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 151px cyan;
   font-family: neondos;
-}
-
-.ingredientes span {
-  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
-  -webkit-animation: blink linear infinite 1.0s;
-          animation: blink linear infinite 1.0s;
 }
 
 @media only screen and (min-width: 280px) and (max-width: 1022px) {
@@ -805,6 +808,16 @@ section {
           transform: scale(1.1);
 }
 
+.guarnicion p {
+  color: white;
+  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
+  font-family: neonDos;
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .preciosguar {
   font-size: 30px;
   text-align: center;
@@ -872,6 +885,7 @@ section {
   text-align: center;
   font-size: 80px;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .preciosbirra {
@@ -880,6 +894,7 @@ section {
   color: #fff;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   margin-bottom: 5%;
+  font-family: neonNombre;
 }
 
 .birrasbirra {
@@ -898,10 +913,15 @@ section {
 
 .neonbirras {
   font-size: 25px;
-  font-family: 'Lucida Sans';
+  font-family: neonDos;
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   color: #fff;
   text-align: center;
+}
+
+.neonbirras span.nombreh {
+  font-size: 25px;
+  text-shadow: 0 0 7px #ff00f2, 0 0 21px black, 0 0 42px #ff00f2, 0 0 151px #ff00f2;
 }
 
 @media only screen and (max-width: 479px) {
@@ -934,17 +954,18 @@ section {
 }
 
 .texto {
-  font-family: 'Lucilda sans';
+  font-family: neonNombre;
   color: #fff;
   text-align: center;
-  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
+  text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 151px cyan;
   font-size: 30px;
-  margin: 5%;
+  margin-bottom: 5%;
 }
 
 .reserva {
   text-align: center;
   font-size: 80px;
+  margin-bottom: 5%;
 }
 
 form {
@@ -952,6 +973,7 @@ form {
   text-shadow: 0 0 7px cyan, 0 0 21px black, 0 0 42px white, 0 0 151px cyan;
   width: 80%;
   margin: 0 auto;
+  font-family: neonNombre;
 }
 
 label, input {
@@ -1025,6 +1047,7 @@ footer {
 }
 
 .subir {
+  font-size: 50px;
   height: 70px;
   width: 70px;
   color: rgba(255, 255, 255, 0.696);
@@ -1040,8 +1063,11 @@ footer {
   font-family: neonDos;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 500px) {
+@media only screen and (min-width: 200px) and (max-width: 700px) {
   footer {
+    font-size: 35px;
+  }
+  .subir {
     font-size: 35px;
   }
 }

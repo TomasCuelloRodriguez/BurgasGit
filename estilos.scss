@@ -39,7 +39,7 @@ header h1 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-span{ 
+header span{ 
     animation: blink linear infinite 1.5s;
 }
 
@@ -147,7 +147,7 @@ section{
     font-weight:1000;
     color:white;
     text-shadow: $--neongreen--color;
-    font-family: Neondos;
+    font-family: neonNombre;
 }
 
 .carousel-control-prev-icon:after {
@@ -156,7 +156,7 @@ section{
     font-weight:1000;
     color: white;
     text-shadow: $--neongreen--color;
-    font-family: Neondos;
+    font-family: neonNombre;
 }
 
 
@@ -183,15 +183,11 @@ section{
     opacity: 0;
     color: rgb(255, 255, 255);
     text-shadow:$--neonskyblue--color;
-    font-family: 'Lucida Sans';
+    font-family: neonNombre;
     font-size: 25px;
+    justify-content: center;
 }
 
-.beers{
-    min-height: 100%;
-    width: 100%;
-    display: grid;
-}
 
 .carouselimgind:hover img{
     opacity: 0.3;
@@ -202,6 +198,11 @@ section{
 .carouselimgind img{
     width: 580px;
     height: 580px;
+}
+.beers{
+    min-height: 100%;
+    width: 100%;
+    display: grid;
 }
 
 #antind{
@@ -310,6 +311,7 @@ section{
     font-size: 25px;
     text-shadow: $--neonskyblue--color;
     color: #fff;
+    font-family: neonNombre;
 }
 .mapview{
     width:400px ;
@@ -333,7 +335,7 @@ section{
     @extend .neon;
     text-align: center;
     font-size: 80px;
-    margin-bottom: 10%;
+    margin-bottom:5%;
 }
 /* Empieza Hamburguesas */
 .burgermenu{
@@ -344,10 +346,14 @@ section{
 .nombreh{
     font-size: 65px;
     color: #fff;
-    text-shadow: $--neonskyblue--color;
+    text-shadow:$--neonpinktwo--color;
     font-family: neonNombre;
 }
 
+span.nombreh{
+    font-size: 35px;
+    text-shadow: $--neonpinktwo--color;
+}
 
 .burgersmenuimg{
     display: grid;
@@ -392,13 +398,11 @@ section{
 .ingredientes{
     color: #fff;
     font-size: 35px;
-    text-shadow: $--neonskyblue--color;
+    text-shadow: $--neonskybluedos--color;
     font-family: neondos;
 }
-.ingredientes span{
-    text-shadow: $--neonpinktwo--color;
-    animation: blink linear infinite 1.s;
-}
+
+
 
 @media only screen and (min-width:280px)and(max-width:1022px){
     .burgersmenu1{
@@ -569,6 +573,15 @@ section{
 .guar:hover{
     transform: scale(1.1);
 }
+.guarnicion p{
+    color: rgb(255, 255, 255);
+    text-shadow:$--neonskyblue--color;
+    font-family: neonDos;
+    font-size: 35px;
+    justify-content: center;
+}
+
+
 .preciosguar{
     font-size: 30px;
     text-align: center;
@@ -636,6 +649,7 @@ section{
     text-align: center;
     font-size: 80px;
     margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 .preciosbirra{
@@ -644,6 +658,7 @@ section{
     color: #fff;
     text-shadow: $--neonskyblue--color;
     margin-bottom: 5%;
+    font-family: neonNombre;
 }
 .birrasbirra{
     max-width: 278px;
@@ -656,10 +671,14 @@ section{
 }
 .neonbirras{
     font-size: 25px;
-    font-family:'Lucida Sans';
+    font-family:neonDos;
     text-shadow: $--neonskyblue--color;
     color: #fff;
     text-align: center;
+}
+.neonbirras span.nombreh{
+    font-size: 25px;
+    text-shadow: $--neonpinktwo--color;
 }
 
 @media  only screen and (max-width:479px){
@@ -690,18 +709,20 @@ section{
     transform: scale(1.1);
 }
 .texto{
-    font-family:'Lucilda sans';
+    font-family:neonNombre;
     color:#fff;
     text-align: center;
-    text-shadow: $--neonskyblue--color;
+    text-shadow: $--neonskybluedos--color;
     font-size: 30px;
-    margin: 5%;
+    margin-bottom: 5%;
 }
+
 
 .reserva{
     @extend .neon;
     text-align: center;
     font-size: 80px;
+    margin-bottom: 5%;
 }
 
 form {
@@ -709,6 +730,7 @@ form {
     text-shadow: $--neonskyblue--color;
     width: 80%;
     margin: 0 auto;
+    font-family: neonNombre;
 }
 
 label, input {
@@ -790,6 +812,7 @@ $redes: (
     }
 }
 .subir{
+    font-size: 50px;
     height: 70px;
     width: 70px;
     color: map-get($map: $redes, $key:fb );
@@ -802,10 +825,14 @@ $redes: (
     color:  map-get($map: $redes, $key:fb );
     text-shadow:$--neonskyblue--color;
     font-family: neonDos;
+    
 }
 
-@media only screen and (min-width: 200px) and (max-width:500px) {
+@media only screen and (min-width: 200px) and (max-width:700px) {
     footer{
+        font-size: 35px;
+    }
+    .subir{
         font-size: 35px;
     }
     
